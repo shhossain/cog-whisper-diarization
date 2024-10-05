@@ -25,7 +25,7 @@ class Predictor(BasePredictor):
 
     def setup(self):
         """Load the model into memory to make running multiple predictions efficient"""
-        model_name = "large-v3"
+        model_name = "Systran/faster-distil-whisper-large-v3"
         self.model = WhisperModel(
             model_name,
             device="cuda" if torch.cuda.is_available() else "cpu",
