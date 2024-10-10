@@ -34,4 +34,4 @@ jobs:
 
       - name: Push to Replicate
         run: |
-          cog push r8.im/unityflowdev/whisper-bangla
+          cog push r8.im/${{ inputs.model_name }}
